@@ -34,4 +34,4 @@ El cálculo base se realiza con las unidades del sistema imperial (grains y FPS)
 
 Autor
 
-    Pablo I. Ripoll - Buenos Aires, Argentina - 2025
+    Pablo I. Ripoll - CABA, Argentina - Julio de 2025
