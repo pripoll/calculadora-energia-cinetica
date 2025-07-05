@@ -24,4 +24,4 @@ Fórmulas utilizadas
 
 Autor
 
-    Pablo I. Ripoll - 2025
+    Pablo I. Ripoll - Buenos Aires, Argentina - 2025
