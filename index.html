@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de energía cinética v1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="calculator-container">
+            <h1>Calculadora de energía cinética de proyectiles v1</h1>
+
+            <details class="instructions">
+                <summary>Instrucciones de uso</summary>
+                <div class="instructions-content">
+                    <p>Esta herramienta calcula la energía cinética de un proyectil basándose en su peso y velocidad inicial.</p>
+                    
+                    <h4>Paso 1: Ingrese los datos del proyectil</h4>
+                    <ul>
+                        <li><b>Peso del proyectil (grains):</b> Ingrese el peso del proyectil en la unidad "grains".</li>
+                        <li><b>Velocidad en boca (FPS):</b> Ingrese la velocidad del proyectil al salir del cañón en "pies por segundo".</li>
+                    </ul>
+
+                    <h4>Paso 2: Obtenga el resultado</h4>
+                    <p>La calculadora mostrará la energía cinética resultante en dos unidades de medida estándar.</p>
+
+                    <h4>Abreviaturas utilizadas:</h4>
+                    <ul>
+                        <li><b>Grains:</b> Unidad de masa comúnmente usada para proyectiles (1 libra = 7000 grains).</li>
+                        <li><b>FPS:</b> Pies por segundo (Feet Per Second), unidad de velocidad.</li>
+                        <li><b>Ft-Lbs:</b> Pie-libra fuerza (Foot-Pounds), unidad de energía en el sistema imperial.</li>
+                        <li><b>Joules (J):</b> Julio, unidad de energía en el Sistema Internacional.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <div class="form-group">
+                <label for="weight">Peso del proyectil (grains)</label>
+                <input type="number" id="weight" step="any" placeholder="Ej: 150">
+            </div>
+
+            <div class="form-group">
+                <label for="velocity">Velocidad en boca (FPS)</label>
+                <input type="number" id="velocity" step="any" placeholder="Ej: 2800">
+            </div>
+
+            <button id="calculateBtn">Calcular energía</button>
+
+            <div id="result" class="result-container"></div>
+        </div>
+
+        <footer>
+            <p>Una herramienta diseñada por <strong>Pablo I. Ripoll</strong>.</p>
+            <p>Buenos Aires, Argentina - 2025</p>
+            <img src="logo.png" alt="Logo del autor" class="footer-logo">
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
