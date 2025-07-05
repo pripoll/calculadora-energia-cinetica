@@ -66,42 +66,47 @@ h1 {
     margin-top: 5px;
 }
 
-/* Estilos para los campos de entrada compuestos (input + select) */
-.form-group-compound {
-    display: flex;
-    gap: 10px; /* Espacio entre el input y el selector */
-    align-items: flex-end; /* Alinea la base del input y el selector */
+.form-group {
     margin-bottom: 18px;
 }
 
-.input-wrapper {
-    flex-grow: 1; /* El campo de entrada ocupa el espacio sobrante */
-}
-
-.input-wrapper label, .unit-selector-wrapper label {
+.form-group label {
     display: block;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-.input-wrapper input {
-    width: 100%;
+.input-with-unit {
+    display: flex;
+    gap: 10px; /* Espacio entre el campo de número y el selector */
+}
+
+.input-with-unit input {
+    flex-grow: 1; /* El campo de número ocupa el espacio disponible */
+    width: 100%; /* Fallback para navegadores antiguos */
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     box-sizing: border-box;
+    -moz-appearance: textfield; /* Oculta las flechas en Firefox */
 }
 
-.unit-selector-wrapper select {
-    width: 100px; /* Ancho fijo para el selector */
+.input-with-unit input::-webkit-outer-spin-button,
+.input-with-unit input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Oculta las flechas en Chrome/Safari */
+    margin: 0;
+}
+
+.input-with-unit select {
+    width: 110px; /* Ancho fijo para el selector de unidades */
     padding: 12px 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     background-color: white;
-    height: 47px; /* Para que coincida con la altura del input */
 }
+
 
 button {
     width: 100%;
@@ -114,7 +119,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-top: 10px;
+    margin-top: 25px; /* Margen superior para separar el botón del campo de arriba */
 }
 
 button:hover {
