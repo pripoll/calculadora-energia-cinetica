@@ -66,23 +66,41 @@ h1 {
     margin-top: 5px;
 }
 
-.form-group {
+/* Estilos para los campos de entrada compuestos (input + select) */
+.form-group-compound {
+    display: flex;
+    gap: 10px; /* Espacio entre el input y el selector */
+    align-items: flex-end; /* Alinea la base del input y el selector */
     margin-bottom: 18px;
 }
 
-.form-group label {
+.input-wrapper {
+    flex-grow: 1; /* El campo de entrada ocupa el espacio sobrante */
+}
+
+.input-wrapper label, .unit-selector-wrapper label {
     display: block;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-.form-group input {
+.input-wrapper input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     box-sizing: border-box;
+}
+
+.unit-selector-wrapper select {
+    width: 100px; /* Ancho fijo para el selector */
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: white;
+    height: 47px; /* Para que coincida con la altura del input */
 }
 
 button {
@@ -96,6 +114,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -126,10 +145,9 @@ footer p {
     margin: 4px 0;
 }
 
-/* Estilos para el logo en el pie de página */
 .footer-logo {
     display: block;
-    margin: 15px auto 0; /* Margen superior de 15px, centrado horizontalmente */
-    max-width: 80px;      /* Ancho máximo del logo para que no sea muy grande */
-    height: auto;         /* Mantiene la proporción del logo */
+    margin: 15px auto 0;
+    max-width: 80px;
+    height: auto;
 }

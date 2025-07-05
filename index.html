@@ -19,8 +19,8 @@
                     
                     <h4>Paso 1: Ingrese los datos del proyectil</h4>
                     <ul>
-                        <li><b>Peso del proyectil (grains):</b> Ingrese el peso del proyectil en la unidad "grains".</li>
-                        <li><b>Velocidad en boca (FPS):</b> Ingrese la velocidad del proyectil al salir del cañón en "pies por segundo".</li>
+                        <li><b>Peso del proyectil:</b> Ingrese el peso del proyectil y seleccione la unidad correspondiente (grains o gramos).</li>
+                        <li><b>Velocidad en boca:</b> Ingrese la velocidad del proyectil y seleccione la unidad (pies por segundo o metros por segundo).</li>
                     </ul>
 
                     <h4>Paso 2: Obtenga el resultado</h4>
@@ -28,22 +28,42 @@
 
                     <h4>Abreviaturas utilizadas:</h4>
                     <ul>
-                        <li><b>Grains:</b> Unidad de masa comúnmente usada para proyectiles (1 libra = 7000 grains).</li>
-                        <li><b>FPS:</b> Pies por segundo (Feet Per Second), unidad de velocidad.</li>
-                        <li><b>Ft-Lbs:</b> Pie-libra fuerza (Foot-Pounds), unidad de energía en el sistema imperial.</li>
-                        <li><b>Joules (J):</b> Julio, unidad de energía en el Sistema Internacional.</li>
+                        <li><b>Grains:</b> Unidad de masa (1 gramo = 15.432 grains).</li>
+                        <li><b>Gramos (g):</b> Unidad de masa del Sistema Internacional.</li>
+                        <li><b>FPS:</b> Pies por segundo (Feet Per Second).</li>
+                        <li><b>m/s:</b> Metros por segundo.</li>
+                        <li><b>Ft-Lbs:</b> Pie-libra fuerza (Foot-Pounds).</li>
+                        <li><b>Joules (J):</b> Julio.</li>
                     </ul>
                 </div>
             </details>
 
-            <div class="form-group">
-                <label for="weight">Peso del proyectil (grains)</label>
-                <input type="number" id="weight" step="any" placeholder="Ej: 150">
+            <div class="form-group-compound">
+                <div class="input-wrapper">
+                    <label for="weight">Peso del proyectil</label>
+                    <input type="number" id="weight" step="any" placeholder="Ej: 150">
+                </div>
+                <div class="unit-selector-wrapper">
+                    <label for="weightUnit">Unidad</label>
+                    <select id="weightUnit">
+                        <option value="grains" selected>grains</option>
+                        <option value="grams">gramos</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label for="velocity">Velocidad en boca (FPS)</label>
-                <input type="number" id="velocity" step="any" placeholder="Ej: 2800">
+            <div class="form-group-compound">
+                <div class="input-wrapper">
+                    <label for="velocity">Velocidad en boca</label>
+                    <input type="number" id="velocity" step="any" placeholder="Ej: 2800">
+                </div>
+                <div class="unit-selector-wrapper">
+                    <label for="velocityUnit">Unidad</label>
+                    <select id="velocityUnit">
+                        <option value="fps" selected>FPS</option>
+                        <option value="mps">m/s</option>
+                    </select>
+                </div>
             </div>
 
             <button id="calculateBtn">Calcular energía</button>
