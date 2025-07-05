@@ -1,5 +1,6 @@
 # calculadora-energia-cinetica
 Esta es una aplicación web simple que calcula la energía cinética de un proyectil en la boca del cañón, una medida fundamental en balística para determinar su potencia.
+
 Funcionalidad
 
 La herramienta solicita al usuario dos datos de entrada y permite seleccionar las unidades:
