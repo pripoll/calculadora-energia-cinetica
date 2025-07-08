@@ -156,3 +156,19 @@ footer p {
     max-width: 80px;
     height: auto;
 }
+
+/* Estilos agregados para el nuevo enlace en el pie de página */
+.footer-link {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-link a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
