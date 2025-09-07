@@ -19,7 +19,7 @@
                     
                     <h4>Paso 1: Define el proyectil</h4>
                     <ul>
-                        <li><b>Peso (grains):</b> Ingresa el peso del proyectil en grains.</li>
+                        <li><b>Peso (grains/gramos):</b> Ingresa el peso del proyectil y selecciona la unidad.</li>
                         <li><b>Velocidad (FPS):</b> Ingresa la velocidad del proyectil en FPS.</li>
                     </ul>
 
@@ -29,8 +29,14 @@
             </details>
 
             <div class="form-group">
-                <label for="weight">Peso (grains)</label>
-                <input type="number" id="weight" step="0.01" placeholder="Ej: 115">
+                <label for="weight">Peso</label>
+                <div class="input-with-select">
+                    <input type="number" id="weight" step="0.01" placeholder="Ej: 7.45">
+                    <select id="weight-unit">
+                        <option value="grains">grains</option>
+                        <option value="grams">gramos</option>
+                    </select>
+                </div>
             </div>
 
             <div class="form-group">
