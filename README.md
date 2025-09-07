@@ -1,37 +1,36 @@
-# calculadora-energia-cinetica
-Esta es una aplicación web simple que calcula la energía cinética de un proyectil en la boca del cañón, una medida fundamental en balística para determinar su potencia.
+Calculadora de Energía Cinética
 
-Funcionalidad
+Esta herramienta es una calculadora web diseñada para determinar la energía cinética de un proyectil basándose en su peso y velocidad. Es una utilidad esencial para tiradores, cazadores y entusiastas que necesitan realizar un seguimiento del rendimiento de sus municiones.
+Características
 
-La herramienta solicita al usuario dos datos de entrada y permite seleccionar las unidades:
+    Cálculo Preciso: Calcula la energía cinética en unidades de medida estándar.
 
-    Peso del proyectil: Se puede ingresar en grains o en gramos.
+    Unidades Flexibles: Permite ingresar el peso en grains o gramos, y la velocidad en FPS o m/s.
 
-    Velocidad del proyectil: Se puede ingresar en pies por segundo (FPS) o en metros por segundo (m/s).
+    Doble Resultado: Muestra la energía cinética tanto en Ft-Lbs como en Joules.
 
-Con estos datos, la aplicación realiza las conversiones necesarias y calcula la energía cinética, mostrando el resultado en dos unidades estándar:
+    Responsiva: Funciona perfectamente en dispositivos móviles y de escritorio.
 
-    Pie-libra fuerza (Ft-Lbs)
+Cómo Usar
 
-    Julios (Joules)
+    Introduce el peso del proyectil y selecciona la unidad (grains o gramos).
 
-Fórmulas y conversiones utilizadas
+    Ingresa la velocidad del proyectil y selecciona la unidad (FPS o m/s).
 
-El cálculo base se realiza con las unidades del sistema imperial (grains y FPS).
+    Haz clic en el botón "Calcular" para ver los resultados.
 
-    Cálculo de energía en Ft-Lbs:
-    Energía (Ft-Lbs) = (Peso_en_grains * Velocidad_en_FPS²) / 450240
+    La calculadora mostrará la energía cinética en Ft-Lbs y Joules.
 
-    Conversiones de entrada:
+Proyectos Relacionados
 
-        1 gramo = 15.4324 grains
+    Calculadora de Blancos a Escala: Visitar
 
-        1 m/s = 3.28084 FPS
-
-    Conversión de salida:
-
-        Energía (Joules) = Energía (Ft-Lbs) * 1.35582
+    Calculadora MOA y Miliradianes: Visitar
 
 Autor
 
-    Pablo I. Ripoll - CABA, Argentina - Julio de 2025
+Una herramienta diseñada por Pablo I. Ripoll
+
+    Email: pripoll@hotmail.com
+
+    Ubicación: Buenos Aires, Argentina - 2025
