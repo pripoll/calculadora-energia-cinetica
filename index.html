@@ -3,63 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Energía Cinética</title>
+    <title>Calculadora de energía cinética v1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="main-container">
         <div class="calculator-container">
-            <h1>Calculadora de Energía Cinética</h1>
+            <h1>Calculadora de energía cinética de proyectiles v1</h1>
 
             <details class="instructions">
                 <summary>Instrucciones de uso</summary>
                 <div class="instructions-content">
-                    <p>Esta calculadora te permite determinar la energía cinética de un proyectil de arma de fuego.</li>
+                    <p>Esta herramienta calcula la energía cinética de un proyectil basándose en su peso y velocidad inicial.</p>
                     
-                    <h4>Paso 1: Define el proyectil</h4>
+                    <h4>Paso 1: Ingrese los datos del proyectil</h4>
                     <ul>
-                        <li><b>Peso (grains/gramos):</b> Ingresa el peso del proyectil y selecciona la unidad.</li>
-                        <li><b>Velocidad (FPS):</b> Ingresa la velocidad del proyectil en FPS.</li>
+                        <li><b>Peso del proyectil:</b> Ingrese el peso del proyectil y seleccione la unidad correspondiente (grains o gramos).</li>
+                        <li><b>Velocidad en boca:</b> Ingrese la velocidad del proyectil y seleccione la unidad (pies por segundo o metros por segundo).</li>
                     </ul>
 
-                    <h4>Paso 2: Obtén el resultado</h4>
-                    <p>La calculadora te dará la energía cinética en Foot-Pounds y Joules.</p>
+                    <h4>Paso 2: Obtenga el resultado</h4>
+                    <p>La calculadora mostrará la energía cinética resultante en dos unidades de medida estándar.</p>
+
+                    <h4>Abreviaturas utilizadas:</h4>
+                    <ul>
+                        <li><b>Grains:</b> Unidad de masa (1 gramo = 15.432 grains).</li>
+                        <li><b>Gramos (g):</b> Unidad de masa del Sistema Internacional.</li>
+                        <li><b>FPS:</b> Pies por segundo (Feet Per Second).</li>
+                        <li><b>m/s:</b> Metros por segundo.</li>
+                        <li><b>Ft-Lbs:</b> Pie-libra fuerza (Foot-Pounds).</li>
+                        <li><b>Joules (J):</b> Julio.</li>
+                    </ul>
                 </div>
             </details>
 
             <div class="form-group">
-                <label for="weight">Peso</label>
-                <div class="input-with-select">
-                    <input type="number" id="weight" step="0.01" placeholder="Ej: 7.45">
-                    <select id="weight-unit">
-                        <option value="grains">grains</option>
+                <label for="weight">Peso del proyectil</label>
+                <div class="input-with-unit">
+                    <input type="number" id="weight" step="any" placeholder="Ej: 150">
+                    <select id="weightUnit">
+                        <option value="grains" selected>grains</option>
                         <option value="grams">gramos</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="velocity">Velocidad (FPS)</label>
-                <input type="number" id="velocity" step="0.01" placeholder="Ej: 1200">
+                <label for="velocity">Velocidad en boca</label>
+                <div class="input-with-unit">
+                    <input type="number" id="velocity" step="any" placeholder="Ej: 2800">
+                    <select id="velocityUnit">
+                        <option value="fps" selected>FPS</option>
+                        <option value="mps">m/s</option>
+                    </select>
+                </div>
             </div>
 
-            <button id="calculateBtn">Calcular Energía</button>
+            <button id="calculateBtn">Calcular energía</button>
 
-            <div id="result" class="result-container">
-                <p id="ftlbs-result">Energía (Ft-Lbs): <span></span></p>
-                <p id="joules-result">Energía (Joules): <span></span></p>
-            </div>
+            <div id="result" class="result-container"></div>
         </div>
 
         <footer>
             <p>Una herramienta diseñada por <a href="mailto:pripoll@hotmail.com"><b>Pablo I. Ripoll</b></a></p>
             <p>Buenos Aires, Argentina - 2025</p>
+            <!-- Línea intercalada para el nuevo enlace -->
             <p class="footer-link">
-                <a href="https://pripoll.github.io/calculadora-moa-mil/" target="_blank" rel="noopener noreferrer">Visite la 'Calculadora MOA y Miliradianes' aquí</a>
-            </p>
-            <p class="footer-link">
-                <a href="https://pripoll.github.io/calculadora-blancos-escala/" target="_blank" rel="noopener noreferrer">Visite la 'Calculadora de blancos a escala' aquí</a>
+                <a href="https://pripoll.github.io/calculadora-dianas/" target="_blank" rel="noopener noreferrer">Visita la calculadora de blancos a escala aquí</a>
             </p>
             <img src="logo.png" alt="Logo del autor" class="footer-logo" onerror="this.style.display='none'">
         </footer>
