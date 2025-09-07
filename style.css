@@ -1,4 +1,4 @@
-﻿body {
+body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background-color: #f0f2f5;
     color: #333;
@@ -78,28 +78,21 @@ h1 {
 
 .input-with-unit {
     display: flex;
-    gap: 10px; /* Espacio entre el campo de número y el selector */
+    gap: 10px;
 }
 
 .input-with-unit input {
-    flex-grow: 1; /* El campo de número ocupa el espacio disponible */
-    width: 100%; /* Fallback para navegadores antiguos */
+    flex-grow: 1;
+    width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1em;
     box-sizing: border-box;
-    -moz-appearance: textfield; /* Oculta las flechas en Firefox */
-}
-
-.input-with-unit input::-webkit-outer-spin-button,
-.input-with-unit input::-webkit-inner-spin-button {
-    -webkit-appearance: none; /* Oculta las flechas en Chrome/Safari */
-    margin: 0;
 }
 
 .input-with-unit select {
-    width: 110px; /* Ancho fijo para el selector de unidades */
+    width: 110px;
     padding: 12px 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -119,7 +112,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
-    margin-top: 25px; /* Margen superior para separar el botón del campo de arriba */
+    margin-top: 25px;
 }
 
 button:hover {
@@ -135,7 +128,7 @@ button:hover {
     text-align: center;
     font-size: 1.1em;
     font-weight: bold;
-    display: none; /* Oculto por defecto */
+    display: none;
 }
 
 footer {
@@ -157,7 +150,6 @@ footer p {
     height: auto;
 }
 
-/* Estilos agregados para el nuevo enlace en el pie de página */
 .footer-link {
     margin-top: 12px;
     margin-bottom: 12px;
@@ -172,3 +164,4 @@ footer p {
 .footer-link a:hover {
     text-decoration: underline;
 }
+
